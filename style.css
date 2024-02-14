@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+body {
+  background: rgb(2,90,78);
+  background: -moz-radial-gradient(circle, rgba(2,90,78,1) 0%, rgba(37,37,37,1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(2,90,78,1) 0%, rgba(37,37,37,1) 100%);
+  background: radial-gradient(circle, rgba(2,90,78,1) 0%, rgba(37,37,37,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#025a4e",endColorstr="#252525",GradientType=1);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+nav {
+display: flex;
+justify-content: center;
+padding: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap:4rem;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.active-nav {
+  background-color: white;
+  opacity: .4;
+  z-index: -2;
+  border-radius: 90px; 
+  position: absolute;
+  top: -5px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  width: 80px; 
+  height: 30px; 
+}
+
+
+.flexjustcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  position: relative;
+}
+
+#herobanner h4 {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+}
+
+#herobanner h1 {
+  font-size: 3rem;
+}
+
+#herobanner h2 {
+  font-size: 2rem;
+}
+
+.arrow {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -8px;
+  }
+  100% {
+    top: 0px;
+  }
+}  
+    .grain-overlay {
+      opacity: .05;
+      background-image: url(/asset/billeder/grainybg.gif);
+      position: fixed;
+      top: -80%;
+      bottom: -80%;
+      left: 0%;
+      right: 0%;
+    }
