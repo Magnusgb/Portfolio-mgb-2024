@@ -1,7 +1,3 @@
-window.onload = function() {
-  window.scrollTo(0, 0);
-};
-
 // Rul til toppen af siden, når der refresher
 window.addEventListener('beforeunload', function() {
   window.scrollTo(0, 0);
@@ -47,32 +43,6 @@ links.forEach(link => {
     });
   });
 });
-
-window.onscroll = function() {
-  scrollRotate();
-};
-
-// Rotate star
-function scrollRotate() {
-  let images = document.querySelectorAll('.star');
-  images.forEach(function(image) {
-    image.style.transform = "rotate(" + window.scrollY/4 + "deg)";
-  });
-}
-
-
-// ScrollReveal
-ScrollReveal().reveal('.nav-links', { delay: 2800 });
-ScrollReveal().reveal('#herobanner', { delay: 2500 });
-
-
-(function () {
-  var words = ["Designer","UI/UX udvikler", "Frontend udvikler"],
-  i = 0;
-  setInterval(function(){ $('#words').fadeOut(function(){
-      $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
-    }); }, 2000)
-})();
 
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' }); /* Rul til toppen med en glat overgang */
