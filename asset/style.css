@@ -1,5 +1,5 @@
 :root {
-  /*Sektion forhold*/
+  /*Sektion*/
   --margin-in: auto;
   --width-sec: 80%;
 }
@@ -197,12 +197,11 @@ padding-top: 1.5rem;
   color: #FAF3DD;
 }
 .right p{
-  margin-bottom: 1.5rem;
+  margin-bottom: 3.5rem;
 }
 
 .left, .right {
   flex: 1; 
-
   color: #252525;
 }
 
@@ -233,8 +232,6 @@ font-size: 1.3rem;
   align-items: center;
   font-size: 5rem;
 }
-
-
 
 /* Projekter */
 
@@ -319,7 +316,7 @@ font-size: 1.3rem;
   border: #F4743B 2px solid;
   padding: 10px 50px; 
   border-radius: 20px;
-  transition: ease 0.3s;
+  transition: ease-in-out 0.3s; 
 }
 
 .kontaktbtn i {
@@ -334,7 +331,6 @@ font-size: 1.3rem;
   background-color: #F4743B;
   color: #FAF3DD;
 }
-
 
 /* Footer */
 
