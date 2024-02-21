@@ -379,3 +379,39 @@ font-size: 1.3rem;
   transition: 0.3s;
 }
 
+/* Mobil version */
+
+@media (max-width: 768px) {
+  
+  .burgermenu {
+    height: 100vh;
+    width: 100%;
+    background-color: #252525;
+  
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-item {
+    position: relative;
+  }
+
+  .active-nav {
+    background-color: #F4743B;
+    z-index: -2;
+    border-radius: 10px; 
+    position: absolute;
+    top: -3.5px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 100px; 
+    height: 35px; 
+  }
+
+  
+}
+
+

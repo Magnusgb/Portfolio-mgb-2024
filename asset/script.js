@@ -2,6 +2,7 @@
 window.addEventListener('beforeunload', function() {
   window.scrollTo(0, 0);
 });
+
 // Preloader
 document.body.style.overflow = "hidden";
 setTimeout(function() {
@@ -14,6 +15,7 @@ window.onload = function() {
     preloadElement.style.animation = 'slideUp 1s ease forwards';
   }, 2000); 
 };
+
 // Cursor
 const cursor = document.querySelector('.cursor');
 document.addEventListener('mousemove', e => {
@@ -44,6 +46,19 @@ links.forEach(link => {
   });
 });
 
+
+// Rotate star
+function scrollRotate() {
+  let images = document.querySelectorAll('.star');
+  images.forEach(function(image) {
+    image.style.transform = "rotate(" + window.scrollY/4 + "deg)";
+  });
+}
+window.onscroll = function() {
+  scrollRotate();
+};
+
+// Scroll to top
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' }); /* Rul til toppen med en glat overgang */
 }
