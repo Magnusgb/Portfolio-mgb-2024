@@ -1,0 +1,103 @@
+.preload {
+  position: fixed;
+  z-index: 1000;
+  background-color: #242424;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.preload h4{
+  color:#F4743B;
+}
+
+.fade-in-bottom {
+  opacity: 0;
+  animation: fadeInBottom 1.5s ease forwards;
+  font-size: 50px;
+}
+
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(70px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-bottom-delay {
+  opacity: 0;
+  animation: fadeInBottomDelay 1.2s ease forwards;
+  font-size: 50px;
+  animation-delay: 1s;
+}
+
+@keyframes fadeInBottomDelay {
+  from {
+    opacity: 0;
+    transform: translateY(70px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(0); /* Startpositionen (under synlighedsområdet) */
+  }
+  to {
+    transform: translateY(-100vh); /* Slutpositionen (toppen af vinduet) */
+  }
+}
+.cursor {
+  border: 2px solid #FAF3DD;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  transition-duration:200ms ;
+  transition-timing-function: ease-out;
+  animation: cursorAnim .5s infinite alternate;
+  z-index: 1;
+}
+
+@keyframes cursorAnim {
+  from {
+    transform:scale(1);
+  }
+  to {
+    transform:scale(.7);
+  }
+}
+
+.expand {
+  animation: cursourAnim2 .5s forwards;
+  width: 30px;
+  height: 30px;
+  background-color: #F4743B;
+  border: 1px solid #F4743B;
+}
+
+@keyframes cursorAnim2 {
+  0% {
+    transform:scale(.2);
+  }
+  50% {
+    transform:scale(.4);
+  }
+  100% {
+    transform:scale(.6);
+    opacity: 0;
+  }
+}

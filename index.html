@@ -3,55 +3,160 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Magnus Bomholt</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="preload.css">
-  <script src="script.js" defer></script>
+  <title>Magnus Bomholt</title>
+  <link rel="icon" type="image/png" href="/asset/billeder/favicon.png">
+  <link rel="stylesheet" href="/asset/style.css">
+  <link rel="stylesheet" href="/asset/preload.css">
+  <link rel="stylesheet" href="/asset/reset.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" 
   integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" 
   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js" integrity="sha512-omCJ8S/xl+DUjxNTqvhVSptHwIEi0IDp52n63HEj8ThJgSK/8Lcpi9btnTdE8db+Y4cDKZrZ7NQZBX4PKN4i4g==" crossorigin="anonymous" 
   referrerpolicy="no-referrer"></script>
-  <script src="preloader.js" defer></script>
-  <link rel="stylesheet" href="https://use.typekit.net/ixl0syb.css">
+  <script src="/asset/preloader.js" defer></script>
+  <link rel="stylesheet" href="https://use.typekit.net/xkq5zrb.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 </head>
 <body>  
   <div class="preload">
     <div><h4 class="fade-in-bottom">Magnus Bomholt</h4></div>
     <div><h4 class="fade-in-bottom-delay">Portfolio</h4></div>
   </div>
-<div class="cursor"></div>
-<div class="grain-overlay"></div>
+  <div class="grain-overlay"></div>
+  <div class="cursor"></div>
   <nav>
+    <h1 class="logo">Magnus Bomholt</h1>
     <ul class="nav-links">
       <div class="nav-item">
-      <li><a href="#">Projekter</a></li>
+      <li><a href="#">Hjem</a></li>
       <div class="active-nav"></div>
     </div>
     <div class="nav-item">
-      <li><a href="#">Om</a></li>
+      <li><a href="#projekt">Projekter</a></li>
+    </div>
+    <div class="nav-item">
+      <li><a href="#om">Om</a></li>
     </div>
     <div class="nav-item">
       <li><a href="#kontakt">Kontakt</a></li>
     </div>
     </ul>
+    <div class="some">
+      <i class='bx bxl-github'></i>
+      <i class='bx bxl-linkedin' ></i>
+    </div>
   </nav>
 
  <!--Landing Page -->
- <section class="flexjustcenter">
+ <section>
   <div id="herobanner">
-    <h4>Velkommen 👋🏻  Jeg hedder Magnus Bomholt </h4>
-    <h1>Kreativ multimediedesigner</h1>
-    <h2> Kommende Front end udvikler</h2>
-    <h3>XXXXX</h3>
-    <img src="/asset/billeder/star.svg" id="star" alt="">
+    <h1>Hej 👋🏻 Magnus her<br> En dedikeret <span class="orangeclr">designer</span></h1>
+    <h3>som brænder for webudvikling og brugercenteret webløsninger.</h3>
   </div>
-  <div class="arrow">
-    <a href="#projekter"><img src="/asset/billeder/pil.svg" alt="Pil ned"></a></div>
+  <div class="rotate-container">
+    <img src="/asset/billeder/scrollformere.png" alt="Scroll for mere">
+  </div>
 </section>
 
+<section id="om" >
+  <div class="wrapper">
+    <div class="left">
+    <h2>"Min kreative passion driver mig til at udforske <br> nye designkoncepter for meningsfulde digitale oplevelser."</h2>
+    <img src="/asset/billeder/Magnus.png" class="ompb" alt="Magnus Selvportræt">
+  </div>
+  <div class="right">
+    <h3>Hvem er jeg?</h3>
+    <p class="omskriv"><b>Velkommen til min digitale oase!</b> <br>
+      Jeg er Magnus Gisselmann Bomholt, en 25-årig multimediedesign-studerende ved UCL i Odense. Med en dyb fascination for design, har jeg kastet mig ud i verden af kreativitet siden jeg var helt ung. Mine forældres entreprenørånd og deres eget tøjmærke har altid været en del af min opvækst og har vækket min interesse for design.
+      I 2020 sprang jeg ud i mit eget lille projekt, "Twicer" - et tøjmærke, der startede som en sjov hobby og sidenhen har udviklet sig til mere end bare det. At skabe noget unikt og meningsfuldt har altid været min drivkraft.
+      <br> <br>
+      Når jeg ikke er optaget af design, drømmer jeg om at blive en del af et team som front-end developer. At kunne skabe digitale oplevelser, der er både brugervenlige og inspirerende, er min ultimative ambition.
+      <br> <br>
+      Hvis du synes, at min tilgang til design og udvikling lyder spændende, er du mere end velkommen til at kontakte mig. 
+      <br> <br>
+      Tak fordi du kiggede forbi, fortsat god dag!</p>
+      <a href="#"><button class="primarybtn">Kontakt mig!</button></a>
+      <a href="#"><button class="btnblack">Se mit CV</button></a>
+
+  </div>
+  </div>
+</section>
+
+<section class="filler">
+  <h2 class="fade-in"> <span class="star">&#10041;</span> <span class="text">PORTFOLIO 2024 MAGNUS BOMHOLT</span> <span class="star">&#10041;</span></h2>
+</section>
+
+<section id="projekt">
+  <div class="projekter">
+    <img class="projekt-img" src="/asset/billeder/hydrovertic.png" alt="Hydrovertic Eksamencase">
+  <div class="projekt-indhold">
+    <h2 class="projekt-h2">Hydrovertic</h2>
+    <h3 class="projekt-h3">Gruppeprojekt - UI/UX - HTML/CSS/JS</h1>
+    <p class="projekt-p">Et spændende gruppeprojekt med fokus på brugergrænseflade (UI) 
+    og brugeroplevelse (UX), hvor jeg har kodet alt HTML, CSS og filterfunktionen i JavaScript.</p>
+  </div>
+    <a href="#"><span class="projekt-btn">Se projekt</span></a>
+  </div>
+  </div>
+
+  <div class="projekter">
+    <div class="projekt-indhold">
+      <h2 class="projekt-h2">Red Barnet Ungdom</h2>
+      <h3 class="projekt-h3">Gruppeprojekt - UI/UX - HTML/CSS/JS</h1>
+      <p class="projekt-p">Et spændende gruppeprojekt med fokus på brugergrænseflade (UI) 
+      og brugeroplevelse (UX), hvor jeg har kodet alt HTML, CSS og filterfunktionen i JavaScript.</p>
+    </div>
+    <a href="#"><span class="projekt-btn">Se projekt</span></a>
+    <img class="projekt-img" src="/asset/billeder/rbu.png" alt="Hydrovertic Eksamencase">
+  </div>
+
+<div class="projekter">
+  <img class="projekt-img" src="/asset/billeder/portfolio.png" alt="Hydrovertic Eksamencase">
+<div class="projekt-indhold">
+  <h2 class="projekt-h2">Personlig Portfolio 2023</h2>
+  <h3 class="projekt-h3">Gruppeprojekt - UI/UX - HTML/CSS/JS</h1>
+  <p class="projekt-p">Et spændende gruppeprojekt med fokus på brugergrænseflade (UI) 
+  og brugeroplevelse (UX), hvor jeg har kodet alt HTML, CSS og filterfunktionen i JavaScript.</p>
+</div>
+  <a href="#"><span class="projekt-btn">Se projekt</span></a>
+</div>
+</div>
+
+<div class="projekter">
+  <div class="projekt-indhold">
+    <h2 class="projekt-h2">WAUWSTORE Redesign</h2>
+    <h3 class="projekt-h3">Gruppeprojekt - UI/UX - HTML/CSS/JS</h1>
+    <p class="projekt-p">Et spændende gruppeprojekt med fokus på brugergrænseflade (UI) 
+    og brugeroplevelse (UX), hvor jeg har kodet alt HTML, CSS og filterfunktionen i JavaScript.</p>
+  </div>
+  <a href="#"><span class="projekt-btn">Se projekt</span></a>
+  <img class="projekt-img" src="/asset/billeder/wauw.png" alt="Hydrovertic Eksamencase">
+</div>
+</section>
+
+
+<section id="kontakt">
+  <h2>Har min profil fanget din interesse? <br> Så er jeg klar på en uforpligtende samtale!</h2>
+  <a href="mailto:magbom123@gmail.com" target="_blank"><span class="kontaktbtn">Opret forbindelse <i class='bx bx-plus'></i></span></a>
+
+</section>
+
+  <footer class="footer">
+    <div class="flexbtm">
+    <div class="btmbtn">
+    <a href="#"><span class="some-btn">Github</span></a>
+    <a href="#"><span class="some-btn">Linkedin</span></a>
+    <a href="#"><span class="some-btn">Instagram</span></a>
+  </div>
+    <div class="toppen">
+      <h3>Til toppen</h3>
+      <i class='bx bx-right-arrow-alt arrow' onclick="scrollToTop()"></i>
+    </div>
+    <h4>Magnus Gisselmann Bomholt &copy; 2024</h4>
+  </div>
+  </footer>
 </body>
 </html>
-
-
-
