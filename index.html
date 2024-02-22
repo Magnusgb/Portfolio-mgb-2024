@@ -16,6 +16,9 @@
   <script src="/asset/script.js" defer></script>
   <link rel="stylesheet" href="https://use.typekit.net/xkq5zrb.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.5/velocity.min.js"></script>
+
 </head>
 <body>  
   <div class="preload">
@@ -24,7 +27,8 @@
   </div>
   <div class="grain-overlay"></div>
   <div class="cursor"></div>
-  <nav class="burgermenu">
+  <nav>
+    <div class="nav-wrapper">
     <ul class="nav-links">
       <div class="nav-item">
       <li><a href="#">Hjem</a></li>
@@ -42,7 +46,7 @@
     </ul>
   </nav>
  <!--Landing Page -->
- <section>
+ <section id="section1">
   <div id="herobanner">
     <h1>Hej 👋🏻 Magnus her<br> En dedikeret <span class="orangeclr">udvikler</span></h1>
     <h3>som brænder for webudvikling og brugercenteret webløsninger.</h3>
@@ -69,7 +73,7 @@
       <br> <br>
       Tak fordi du kiggede forbi, fortsat god dag!</p>
       <a href="#"><button class="primarybtn">Kontakt mig!</button></a>
-      <a href="#"><button class="btnblack">Se mit CV</button></a>
+      <a href="/asset/billeder/CV_MGB.pdf" download="CV_MGB.pdf"><button class="btnblack">Se mit CV</button></a>
   </div>
   </div>
 </section>
@@ -81,7 +85,7 @@
     <img class="projekt-img" src="/asset/billeder/hydrovertic.png" alt="Hydrovertic Eksamencase">
   <div class="projekt-indhold">
     <h2 class="projekt-h2">Hydrovertic</h2>
-    <h3 class="projekt-h3">Gruppeprojekt - UI/UX - HTML/CSS/JS</h1>
+    <h3 class="projekt-h3">Gruppeprojekt <br> UI/UX - HTML/CSS/JS</h1>
     <p class="projekt-p">Et spændende gruppeprojekt med fokus på brugergrænseflade (UI) 
     og brugeroplevelse (UX), hvor jeg har kodet alt HTML, CSS og filterfunktionen i JavaScript.</p>
   </div>
@@ -91,7 +95,7 @@
   <div class="projekter">
     <div class="projekt-indhold">
       <h2 class="projekt-h2">Red Barnet Ungdom</h2>
-      <h3 class="projekt-h3">Gruppeprojekt - UI/UX - HTML/CSS/JS</h1>
+      <h3 class="projekt-h3">Gruppeprojekt <br> UI/UX - HTML/CSS/JS</h1>
       <p class="projekt-p">Et spændende gruppeprojekt med fokus på brugergrænseflade (UI) 
       og brugeroplevelse (UX), hvor jeg har kodet alt HTML, CSS og filterfunktionen i JavaScript.</p>
     </div>
@@ -102,7 +106,7 @@
   <img class="projekt-img" src="/asset/billeder/portfolio.png" alt="Portfolio 2023">
 <div class="projekt-indhold">
   <h2 class="projekt-h2">Personlig Portfolio 2023</h2>
-  <h3 class="projekt-h3">Soloprojekt - UI/UX - HTML/CSS</h1>
+  <h3 class="projekt-h3">Soloprojekt <br> UI/UX - HTML/CSS</h1>
   <p class="projekt-p">Et spændende gruppeprojekt med fokus på brugergrænseflade (UI) 
   og brugeroplevelse (UX), hvor jeg har kodet alt HTML, CSS og filterfunktionen i JavaScript.</p>
 </div>
@@ -112,7 +116,7 @@
 <div class="projekter">
   <div class="projekt-indhold">
     <h2 class="projekt-h2">WAUWSTORE Redesign</h2>
-    <h3 class="projekt-h3">Soloprojekt - UI/UX - Redesign/h1>
+    <h3 class="projekt-h3">Soloprojekt <br> UI/UX - SoMe</h1>
     <p class="projekt-p">Et spændende gruppeprojekt med fokus på brugergrænseflade (UI) 
     og brugeroplevelse (UX), hvor jeg har kodet alt HTML, CSS og filterfunktionen i JavaScript.</p>
   </div>

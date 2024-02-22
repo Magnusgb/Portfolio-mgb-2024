@@ -71,7 +71,6 @@ padding-top: 3rem;
   list-style: none;
   gap: 6rem;
 }
-
 .nav-item {
   position: relative;
 }
@@ -94,7 +93,7 @@ padding-top: 3rem;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 92.5vh;
+  height: 90vh;
 }
 
 #herobanner h1 {
@@ -112,7 +111,7 @@ padding-top: 3rem;
 .orangeclr {
   padding: 0 1.5rem;
   border-radius: 20px;
-  background-color: #F4743B;
+  background-color: hsl(18, 89%, 59%);
   transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease; /* Tilføj border-color her */
   border: 2px solid transparent; /* Tilføj en transparent border */
 }
@@ -290,7 +289,7 @@ font-size: 1.3rem;
 .projekt-img {
   width: 60%;
   height: auto; 
-  max-height: 100%; 
+  max-height: 100%;  
 }
 
 .projekt-img, .projekt-indhold {
@@ -383,35 +382,187 @@ font-size: 1.3rem;
 
 @media (max-width: 768px) {
   
-  .burgermenu {
-    height: 100vh;
-    width: 100%;
-    background-color: #252525;
-  
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .nav-item {
-    position: relative;
-  }
-
-  .active-nav {
-    background-color: #F4743B;
-    z-index: -2;
-    border-radius: 10px; 
-    position: absolute;
-    top: -3.5px; 
-    left: 50%; 
-    transform: translateX(-50%); 
-    width: 100px; 
-    height: 35px; 
-  }
-
-  
+.nav-links  {
+ display: flex;
+flex-direction: column; 
+gap: 10px;
+}
+ #herobanner h1 {
+  font-size: 40px; /* Justerer fontstørrelsen til mindre skærme */
 }
 
+#herobanner h3 {
+  font-size: 16px; /* Justerer fontstørrelsen til mindre skærme */
+  margin-top: 0.5rem; /* Justerer toppmargen til mindre skærme */
+}
 
+.wrapper {
+  flex-direction: column; /* Ændrer retningen til kolonne på mindre skærme */
+}
+
+.btnblack, .primarybtn {
+  padding: 10px 20px; /* Reducerer padding for knapper til mindre skærme */
+}
+
+.omskriv {
+  font-size: 12px; /* Yderligere reduktion af fontstørrelse til mindre skærme */
+}
+
+.right {
+  padding: 0.3rem; /* Yderligere reduktion af padding for højre del til mindre skærme */
+  margin-top: 10px; /* Justerer topmargin for bedre layout */
+}
+
+.filler h2 {
+  font-size: 2rem; /* Yderligere reduktion af fontstørrelsen til mindre skærme */
+}
+.projekter {
+  display: flex;
+  flex-direction: column; /* Ændrer retningen til kolonne på mindre skærme */
+  gap: 20px; /* Reducerer afstanden mellem projekter for mindre skærme */
+  padding-bottom: 100px; /* Reducerer bundpadding for bedre layout på mindre skærme */
+}
+
+.projekt-indhold {
+  display: flex;
+  flex-direction: column;
+}
+
+.projekt-h2 {
+  background-color: #F4743B;
+  color: #FAF3DD;
+  text-align: center;
+  padding: 5px 10px; /* Justerer padding for bedre udseende på mindre skærme */
+  border-radius: 10px;
+  margin: 0 auto; /* Centrerer elementet */
+}
+
+.projekt-h3 {
+  color: #FAF3DD;
+  font-size: 1.2rem; /* Justerer fontstørrelsen for mindre skærme */
+  text-align: center; /* Centrerer teksten */
+}
+
+.projekt-p {
+  color: #FAF3DD;
+  font-size: 1rem; /* Justerer fontstørrelsen for mindre skærme */
+  line-height: 1.3;
+  text-align: center; /* Centrerer teksten */
+}
+
+.projekt-btn {
+  position: relative;
+  text-align: center; /* Centrerer knappens tekst */
+}
+
+.projekt-btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: #FAF3DD;
+  transition: 0.5s ease 0.1s;
+}
+
+.projekt-btn:hover::after {
+  width: 0;
+  transition: 0.5s;
+}
+
+.projekt-img {
+  width: 100%; /* Fylder hele bredden af forældreelementet */
+  height: auto;
+}
+
+.grain-overlay {
+  top: -150%; /* Justerer positionen relativt til skærmens størrelse */
+  bottom: -150%; /* Justerer positionen relativt til skærmens størrelse */
+}
+
+/* Kontakt */
+#kontakt {
+  color: #F4743B;
+  line-height: 1.2;
+  font-size: 1rem; /* Juster fontstørrelsen til mindre skærme */
+  display: flex;
+  flex-direction: column; /* Ændrer retningen til kolonne på mindre skærme */
+  justify-content: space-around; /* Ændrer justification til space-around for bedre layout */
+  align-items: center; /* Centrerer elementerne */
+}
+
+.kontaktbtn {
+  display: inline-block;
+  position: relative;
+  font-family: 'intercom', sans-serif;
+  font-weight: 600;
+  border: #F4743B 2px solid;
+  padding: 8px 30px; /* Reducerer padding for mindre skærme */
+  border-radius: 20px;
+  transition: ease-in-out 0.3s; 
+  margin-bottom: 10px; /* Tilføjer afstand mellem knapper for bedre layout */
+}
+
+.kontaktbtn i {
+  transition: transform 0.3s;
+}
+
+.kontaktbtn:hover i {
+  transform: rotate(90deg);
+}
+
+.kontaktbtn:hover {
+  background-color: #F4743B;
+  color: #FAF3DD;
+}
+
+/* Footer */
+.flexbtm {
+  width: 90%; /* Justerer bredden for bedre layout på mindre skærme */
+  margin: 0 auto; /* Centrerer elementet */
+  display: flex;
+  flex-direction: column; /* Ændrer retningen til kolonne på mindre skærme */
+  justify-content: center; /* Centrerer indholdet */
+  align-items: center; /* Centrerer indholdet */
+  margin-bottom: 20px; /* Justerer bundmargin for bedre layout på mindre skærme */
+  color: #FAF3DD;
+}
+
+.btmbtn {
+  display: flex;
+  flex-direction: column; /* Ændrer retningen til kolonne på mindre skærme */
+  gap: 20px; /* Justerer afstand mellem knapper for bedre layout på mindre skærme */
+}
+
+.toppen {
+  display: flex;
+  gap: 5px; /* Justerer afstand mellem ikoner for bedre layout på mindre skærme */
+  cursor: pointer;
+}
+
+.toppen i {
+  font-size: 1rem; /* Justerer ikonstørrelse for bedre layout på mindre skærme */
+  transform: rotate(-90deg);
+}
+
+.some-btn {
+  position: relative; 
+}
+
+.some-btn::after {
+  content: ''; 
+  position: absolute; 
+  left: 0; 
+  bottom: -3px; 
+  width: 0; 
+  height: 2px; 
+  background-color: #FAF3DD; 
+  transition: 0.5s ease 0.1s;
+}
+
+.some-btn:hover::after {
+  width: 100%; 
+  transition: 0.3s;
+}
+}
