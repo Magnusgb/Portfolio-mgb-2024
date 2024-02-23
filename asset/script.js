@@ -59,7 +59,3 @@ function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' }); /* Rul til toppen med en glat overgang */
 }
 
-var projektSektion = document.getElementById('#projekt');
-$(projektSektion).velocity("scroll", { duration: 1000, easing: "ease-in-out", offset: -50 });
-
-projektSektion();

@@ -11,14 +11,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" 
   integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" 
   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js" integrity="sha512-omCJ8S/xl+DUjxNTqvhVSptHwIEi0IDp52n63HEj8ThJgSK/8Lcpi9btnTdE8db+Y4cDKZrZ7NQZBX4PKN4i4g==" crossorigin="anonymous" 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js" 
+  integrity="sha512-omCJ8S/xl+DUjxNTqvhVSptHwIEi0IDp52n63HEj8ThJgSK/8Lcpi9btnTdE8db+Y4cDKZrZ7NQZBX4PKN4i4g==" crossorigin="anonymous" 
   referrerpolicy="no-referrer"></script>
   <script src="/asset/script.js" defer></script>
   <link rel="stylesheet" href="https://use.typekit.net/xkq5zrb.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.5/velocity.min.js"></script>
-
 </head>
 <body>  
   <div class="preload">
@@ -28,6 +26,7 @@
   <div class="grain-overlay"></div>
   <div class="cursor"></div>
   <nav>
+    <div class="burgermenu">
     <div class="nav-wrapper">
     <ul class="nav-links">
       <div class="nav-item">
@@ -35,16 +34,17 @@
       <div class="active-nav"></div>
     </div>
     <div class="nav-item">
-      <li><a href="#projekt">Projekter</a></li>
+      <li><a href="#om">Om</a></li>
     </div>
     <div class="nav-item">
-      <li><a href="#om">Om</a></li>
+      <li><a href="#projekt">Projekter</a></li>
     </div>
     <div class="nav-item">
       <li><a href="#kontakt">Kontakt</a></li>
     </div>
     </ul>
   </nav>
+</div>
  <!--Landing Page -->
  <section id="section1">
   <div id="herobanner">
@@ -55,7 +55,7 @@
     <img src="/asset/billeder/scrollformere.png" alt="Scroll for mere">
   </div>
 </section>
-<section id="om" >
+<section id="om">
   <div class="wrapper">
     <div class="left">
     <h2>"Min kreative passion driver mig til at udforske <br> nye designkoncepter for meningsfulde digitale oplevelser."</h2>
@@ -72,14 +72,17 @@
       Hvis du synes, at min tilgang til design og udvikling lyder spændende, er du mere end velkommen til at kontakte mig. 
       <br> <br>
       Tak fordi du kiggede forbi, fortsat god dag!</p>
-      <a href="#"><button class="primarybtn">Kontakt mig!</button></a>
-      <a href="/asset/billeder/CV_MGB.pdf" download="CV_MGB.pdf"><button class="btnblack">Se mit CV</button></a>
+      <div class="btnprojekt">
+      <a href="mailto:hello@magnusgb.dk" target="_blank"><button class="primarybtn">Kontakt mig!</button></a>
+      <a href="/asset/billeder/CV_MGB.pdf" download="CV_MGB.pdf"><span class="projekt-btn">Se mit CV</span></a>
+    </div>
   </div>
   </div>
 </section>
 <section class="filler">
   <h2 class="fade-in"> <span class="star">&#10041;</span> <span class="text">PORTFOLIO 2024 MAGNUS BOMHOLT</span> <span class="star">&#10041;</span></h2>
 </section>
+
 <section id="projekt">
   <div class="projekter">
     <img class="projekt-img" src="/asset/billeder/hydrovertic.png" alt="Hydrovertic Eksamencase">
@@ -120,15 +123,14 @@
     <p class="projekt-p">Et spændende gruppeprojekt med fokus på brugergrænseflade (UI) 
     og brugeroplevelse (UX), hvor jeg har kodet alt HTML, CSS og filterfunktionen i JavaScript.</p>
   </div>
-  <a href="https://wauwstore.com"><span class="projekt-btn">Se projekt</span></a>
+  <a href="https://wauwstore.com"><span class="projekt-btn nobtn">Se projekt</span></a>
   <img class="projekt-img" src="/asset/billeder/wauw.png" alt="Hydrovertic Eksamencase">
 </div>
 </section>
 
-
 <section id="kontakt">
   <h2>Har min profil fanget din interesse? <br> Så er jeg klar på en uforpligtende samtale!</h2>
-  <a href="mailto:magbom123@gmail.com" target="_blank" class="hover-link" id="contact-link">
+  <a href="mailto:hello@magnusgb.dk" target="_blank" class="hover-link" id="contact-link">
     <span class="kontaktbtn">Opret forbindelse <i class='bx bx-plus'></i></span>
   </a>
 </section>

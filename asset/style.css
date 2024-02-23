@@ -286,6 +286,10 @@ font-size: 1.3rem;
   transition: 0.5s;
 }
 
+.nobtn {
+  text-decoration: line-through solid 3px #F4743B;
+}
+
 .projekt-img {
   width: 60%;
   height: auto; 
@@ -381,188 +385,86 @@ font-size: 1.3rem;
 /* Mobil version */
 
 @media (max-width: 768px) {
+
+  .nav-links a {
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    gap:50px;
+  }
+
+  .active-links {
+    width: 20px;
+  }
+
+  .grain-overlay {
+    display: none;
+  }
   
-.nav-links  {
- display: flex;
-flex-direction: column; 
-gap: 10px;
-}
- #herobanner h1 {
-  font-size: 40px; /* Justerer fontstørrelsen til mindre skærme */
-}
+  .flexbtm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 
-#herobanner h3 {
-  font-size: 16px; /* Justerer fontstørrelsen til mindre skærme */
-  margin-top: 0.5rem; /* Justerer toppmargen til mindre skærme */
-}
+  #kontakt {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
 
-.wrapper {
-  flex-direction: column; /* Ændrer retningen til kolonne på mindre skærme */
-}
+  #kontakt h2 {
+    font-size: 1.2rem;
+  }
+  .kontaktbtn {
+    padding:1rem;
+  }
 
-.btnblack, .primarybtn {
-  padding: 10px 20px; /* Reducerer padding for knapper til mindre skærme */
-}
+  .text {
+    font-size: 1.43rem;
+  }
 
-.omskriv {
-  font-size: 12px; /* Yderligere reduktion af fontstørrelse til mindre skærme */
-}
+  .star {
+    display: none;
+  }
 
-.right {
-  padding: 0.3rem; /* Yderligere reduktion af padding for højre del til mindre skærme */
-  margin-top: 10px; /* Justerer topmargin for bedre layout */
-}
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 
-.filler h2 {
-  font-size: 2rem; /* Yderligere reduktion af fontstørrelsen til mindre skærme */
-}
-.projekter {
-  display: flex;
-  flex-direction: column; /* Ændrer retningen til kolonne på mindre skærme */
-  gap: 20px; /* Reducerer afstanden mellem projekter for mindre skærme */
-  padding-bottom: 100px; /* Reducerer bundpadding for bedre layout på mindre skærme */
-}
+  .left img {
+    width: 290px;
+  }
 
-.projekt-indhold {
-  display: flex;
-  flex-direction: column;
-}
+  .btnprojekt {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
 
-.projekt-h2 {
-  background-color: #F4743B;
-  color: #FAF3DD;
-  text-align: center;
-  padding: 5px 10px; /* Justerer padding for bedre udseende på mindre skærme */
-  border-radius: 10px;
-  margin: 0 auto; /* Centrerer elementet */
-}
+  #herobanner h1 {
+    font-size: 2rem;
+  }
 
-.projekt-h3 {
-  color: #FAF3DD;
-  font-size: 1.2rem; /* Justerer fontstørrelsen for mindre skærme */
-  text-align: center; /* Centrerer teksten */
-}
+  #herobanner h3 {
+    font-size: 1rem;
+  }
 
-.projekt-p {
-  color: #FAF3DD;
-  font-size: 1rem; /* Justerer fontstørrelsen for mindre skærme */
-  line-height: 1.3;
-  text-align: center; /* Centrerer teksten */
-}
+  #herobanner {
+    height: 50vh;
+  }
 
-.projekt-btn {
-  position: relative;
-  text-align: center; /* Centrerer knappens tekst */
-}
+  .rotate-container {
+    width: 50px;
+    bottom: 280px;
+    right: 25px;
+  }
 
-.projekt-btn::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 100%;
-  height: 2px;
-  background-color: #FAF3DD;
-  transition: 0.5s ease 0.1s;
-}
-
-.projekt-btn:hover::after {
-  width: 0;
-  transition: 0.5s;
-}
-
-.projekt-img {
-  width: 100%; /* Fylder hele bredden af forældreelementet */
-  height: auto;
-}
-
-.grain-overlay {
-  top: -150%; /* Justerer positionen relativt til skærmens størrelse */
-  bottom: -150%; /* Justerer positionen relativt til skærmens størrelse */
-}
-
-/* Kontakt */
-#kontakt {
-  color: #F4743B;
-  line-height: 1.2;
-  font-size: 1rem; /* Juster fontstørrelsen til mindre skærme */
-  display: flex;
-  flex-direction: column; /* Ændrer retningen til kolonne på mindre skærme */
-  justify-content: space-around; /* Ændrer justification til space-around for bedre layout */
-  align-items: center; /* Centrerer elementerne */
-}
-
-.kontaktbtn {
-  display: inline-block;
-  position: relative;
-  font-family: 'intercom', sans-serif;
-  font-weight: 600;
-  border: #F4743B 2px solid;
-  padding: 8px 30px; /* Reducerer padding for mindre skærme */
-  border-radius: 20px;
-  transition: ease-in-out 0.3s; 
-  margin-bottom: 10px; /* Tilføjer afstand mellem knapper for bedre layout */
-}
-
-.kontaktbtn i {
-  transition: transform 0.3s;
-}
-
-.kontaktbtn:hover i {
-  transform: rotate(90deg);
-}
-
-.kontaktbtn:hover {
-  background-color: #F4743B;
-  color: #FAF3DD;
-}
-
-/* Footer */
-.flexbtm {
-  width: 90%; /* Justerer bredden for bedre layout på mindre skærme */
-  margin: 0 auto; /* Centrerer elementet */
-  display: flex;
-  flex-direction: column; /* Ændrer retningen til kolonne på mindre skærme */
-  justify-content: center; /* Centrerer indholdet */
-  align-items: center; /* Centrerer indholdet */
-  margin-bottom: 20px; /* Justerer bundmargin for bedre layout på mindre skærme */
-  color: #FAF3DD;
-}
-
-.btmbtn {
-  display: flex;
-  flex-direction: column; /* Ændrer retningen til kolonne på mindre skærme */
-  gap: 20px; /* Justerer afstand mellem knapper for bedre layout på mindre skærme */
-}
-
-.toppen {
-  display: flex;
-  gap: 5px; /* Justerer afstand mellem ikoner for bedre layout på mindre skærme */
-  cursor: pointer;
-}
-
-.toppen i {
-  font-size: 1rem; /* Justerer ikonstørrelse for bedre layout på mindre skærme */
-  transform: rotate(-90deg);
-}
-
-.some-btn {
-  position: relative; 
-}
-
-.some-btn::after {
-  content: ''; 
-  position: absolute; 
-  left: 0; 
-  bottom: -3px; 
-  width: 0; 
-  height: 2px; 
-  background-color: #FAF3DD; 
-  transition: 0.5s ease 0.1s;
-}
-
-.some-btn:hover::after {
-  width: 100%; 
-  transition: 0.3s;
-}
+  .preload h4 {
+    font-size:30px;
+  }
+ 
 }
