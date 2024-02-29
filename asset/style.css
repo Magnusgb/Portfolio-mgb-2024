@@ -3,6 +3,18 @@
   --margin-in: auto;
   --width-sec: 80%;
 }
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  scroll-margin-block-start: 2rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
 
 body {
   background-color: #252525;
@@ -87,6 +99,23 @@ padding-top: 3rem;
   height: 35px; 
 }
 
+#section1 {
+  animation: scale-down linear both;
+  animation-timeline: view(block);
+  animation-range: exit-crossing 0% cover 100%;
+}
+
+@keyframes scale-down {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+
 #herobanner {
   display: flex;
   flex-direction: column;
@@ -155,6 +184,8 @@ padding-top: 3rem;
   }
 }
 
+/*Om mig*/
+
 .wrapper {
   color: #F4743B;
   display: flex;
@@ -181,6 +212,7 @@ padding-top: 3rem;
   color: #FAF3DD;
   transition: transform 0.3s, color 0.3s; 
   margin-right: 20px;
+  font-size: 1.2rem;
 }
 
 .primarybtn:hover {
@@ -202,6 +234,40 @@ padding-top: 3rem;
 .left, .right {
   flex: 1; 
   color: #252525;
+}
+
+.left {
+  animation: fly-in linear both;
+  animation-timeline: view(block);
+  animation-range: cover 0% cover 30%;
+}
+
+.right {
+  animation: fly-in2 linear both;
+  animation-timeline: view(block);
+  animation-range: cover 0% cover 30%;
+}
+
+@keyframes fly-in {
+  from {
+    transform: translateX(-300%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fly-in2 {
+  from {
+    transform: translateX(300%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .wrapper h2,h3{
@@ -230,6 +296,18 @@ font-size: 1.3rem;
   justify-content: center;
   align-items: center;
   font-size: 5rem;
+  animation: reveal linear both;
+  animation-timeline: view(block);
+  animation-range: cover 0% cover 70%;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Projekter */
@@ -238,19 +316,32 @@ font-size: 1.3rem;
   display: flex; 
   padding-bottom:150px;
   gap: 50px;
+  animation: fly-in-projekt linear both;
+  animation-timeline: view(block);
+  animation-range: cover 0% cover 30%;
+}
+
+@keyframes fly-in-projekt {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .reverse {
   flex-direction: row-reverse;
   justify-content: flex-end;
-  align-items: flex-end;
-
 }
 
 .projekt-indhold {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  justify-content: space-between;
 
 }
 
@@ -296,16 +387,6 @@ font-size: 1.3rem;
 
 .nobtn {
   text-decoration: line-through solid 3px #F4743B;
-}
-
-.projekt-img {
-  width: 60%;
-  height: auto; 
-  max-height: 100%;  
-}
-
-.projekt-img, .projekt-indhold {
-  flex: 1; 
 }
 
 /* Kontakt */
@@ -360,6 +441,7 @@ font-size: 1.3rem;
   align-items: center;
   margin-bottom: 30px;
   color: #FAF3DD;
+  
 }
 
 .btmbtn {
@@ -400,6 +482,11 @@ font-size: 1.3rem;
 /* Mobil version */
 
 @media (max-width: 768px) {
+
+  img {
+    max-width: 100%;
+    height: auto;
+}
 
   .nav-links a {
     font-size: 1rem;
@@ -483,10 +570,11 @@ font-size: 1.3rem;
     height: 50vh;
   }
 
-  .rotate-container {
+  .rotate-container img {
     width: 50px;
-    bottom: 260px;
-    right: 25px;
+    position: relative;
+    left: 50px;
+    top: 60px;
   }
 
   .preload h4 {

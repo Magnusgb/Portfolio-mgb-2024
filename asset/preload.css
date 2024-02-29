@@ -61,6 +61,7 @@
   }
 }
 .cursor {
+  display: block;
   border: 2px solid #FAF3DD;
   width: 20px;
   height: 20px;
@@ -99,5 +100,11 @@
   100% {
     transform:scale(.6);
     opacity: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .cursor {
+    display: none;
   }
 }

@@ -24,7 +24,7 @@ document.addEventListener('click', () => {
   }, 300)
 })
 
-// Nav menu
+// Navigationsmenu 
 gsap.registerPlugin(Flip);
 
 const links = document.querySelectorAll('.nav-item a');
@@ -42,8 +42,10 @@ links.forEach(link => {
   });
 });
 
+ScrollReveal().reveal('#section1', { delay: 2300 });
 
-// Rotate star
+
+// Portfolio Magnus stjerne roter med scroll
 function scrollRotate() {
   let images = document.querySelectorAll('.star');
   images.forEach(function(image) {
@@ -54,7 +56,7 @@ window.onscroll = function() {
   scrollRotate();
 };
 
-// Scroll to top
+// Scroll til toppen
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' }); /* Rul til toppen med en glat overgang */
 }
